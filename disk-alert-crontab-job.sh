@@ -1,0 +1,1 @@
+0 0 * * * test $(df / | grep ^/ | awk '{print $4}') -lt 1048576 && echo "Warning: Free disk space is less than 1G on /"
